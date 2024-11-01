@@ -14,6 +14,66 @@
     <title>Frontend Mentor | Mortgage repayment calculator</title>
   </head>
   <body>
+    <main class="container">
+      <section class="left">
+        <div class="header">
+          <p class="title">Mortgage Calculator</p>
+          <p class="clear">Clear All</p>
+        </div>
+        <form action="#" id="form">
+          <div class="inputbox">
+            <label for="amount">Mortgage Amount</label>
+            <div class="input-field">
+              <div class="inputbtn">£</div>
+              <input type="text" id="amount" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputbox">
+              <label for="term">Mortgage Term</label>
+              <div class="input-field">
+                <input type="text" id="term" />
+                <div class="inputbtn">Years</div>
+              </div>
+            </div>
+            <div class="inputbox">
+              <label for="rate">Interest Rate</label>
+              <div class="input-field">
+                <input type="text" id="rate" />
+                <div class="inputbtn">%</div>
+              </div>
+            </div>
+          </div>
+          <div class="inputbox">
+            <label for="type">Mortgage Type</label>
+            <div class="options">
+              <div class="radio-option">
+                <input type="radio" name="type" id="repayment" />
+                <label for="repayment">Repayment</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="type" id="interest" />
+                <label for="interest">Interest Only</label>
+              </div>
+            </div>
+          </div>
+          <button type="button" id="calculate">
+            <img
+              src="assets/images/icon-calculator.svg"
+              alt="calculator icon"
+            />
+            CalculateRepayments
+          </button>
+        </form>
+      </section>
+      <aside class="right">
+        <img src="assets/images/illustration-empty.svg" alt="empty">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</p>
+      </aside>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>

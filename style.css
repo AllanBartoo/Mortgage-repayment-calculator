@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Lime: hsl(61, 70%, 52%);
+  --Red: hsl(4, 69%, 50%);
+  --White: hsl(0, 0%, 100%);
+  --Slate-100: hsl(202, 86%, 94%);
+  --Slate-300: hsl(203, 41%, 72%);
+  --Slate-500: hsl(200, 26%, 54%);
+  --Slate-700: hsl(200, 24%, 40%);
+  --Slate-900: hsl(202, 55%, 16%);
+  --font-weight-700: 700;
+  --font-weight-500: 500;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--Slate-100);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* container */
+.container {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 80%;
+}
+
+/* left */
+.left,
+.right {
+  flex: 1;
+  padding: 2rem;
+}
+
+.left {
+  background-color: var(--White);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: var(--Slate-900);
+  font-weight: var(--font-weight-700);
+  font-size: 1.2rem;
+}
+
+.clear {
+  text-decoration: underline;
+  color: var(--Slate-700);
+  cursor: pointer;
+}
+
+label[for="amount"],
+label[for="rate"],
+label[for="term"],
+label[for="type"] {
+  color: var(--Slate-700);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.col {
+  display: flex;
+  gap: 20px;
+}
+
+.col .inputbox {
+  flex: 1;
+}
+
+.input-field {
+    display: flex;
+    border: 1px solid var(--Slate-700);
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+}
+
+.input-field input {
+   color: var(--Slate-700);
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   padding: 0px 10px;
+   font-size: 1rem;
+   font-weight: var(--font-weight-700);
+}
+
+.input-field .inputbtn {
+    background-color: var(--Slate-100);
+    color: var(--Slate-700);
+    padding: 12px 12px;
+    font-weight: var(--font-weight-700);
+    border-radius: 5px;
+}
+
+/* right */
+.right {
+  background-color: var(--Slate-900);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+} */
