@@ -48,11 +48,21 @@
             <label for="type">Mortgage Type</label>
             <div class="options">
               <div class="radio-option">
-                <input type="radio" name="type" id="repayment" />
+                <input
+                  type="radio"
+                  name="type"
+                  id="repayment"
+                  value="Repayment"
+                />
                 <label for="repayment">Repayment</label>
               </div>
               <div class="radio-option">
-                <input type="radio" name="type" id="interest" />
+                <input
+                  type="radio"
+                  name="type"
+                  id="interest"
+                  value="Interest"
+                />
                 <label for="interest">Interest Only</label>
               </div>
             </div>
@@ -62,15 +72,34 @@
               src="assets/images/icon-calculator.svg"
               alt="calculator icon"
             />
-            CalculateRepayments
+            Calculate Repayments
           </button>
         </form>
       </section>
       <aside class="right">
-        <img src="assets/images/illustration-empty.svg" alt="empty">
-        <h2>Results shown here</h2>
-        <p>Complete the form and click “calculate repayments” to see what
-          your monthly repayments would be.</p>
+        <div class="empty">
+          <img src="assets/images/illustration-empty.svg" alt="empty" />
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+        <div class="completed">
+          <h2>Your Results</h2>
+          <p>
+            Your results are shown below based on the information you
+            provided.To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+          <div id="results">
+            <label for="mothlyrepay">Your monthly repayments</label>
+            <div id="monthlyrepay">£1,797.74</div>
+            <hr>
+            <label for="termrepay">Total you'll repay over the term</label>
+            <div id="termrepay">£1,797.74</div>
+          </div>
+        </div>
       </aside>
     </main>
 
