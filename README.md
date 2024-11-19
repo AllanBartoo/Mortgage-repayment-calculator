@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL:https://github.com/AllanBartoo/Mortgage-repayment-calculator
+- Live Site URL:https://allanbartoo.github.io/Mortgage-repayment-calculator
 
 ## My process
 
