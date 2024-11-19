@@ -24,28 +24,31 @@
           <div class="inputbox">
             <label for="amount">Mortgage Amount</label>
             <div class="input-field">
-              <div class="inputbtn">£</div>
-              <input type="text" id="amount" />
+              <div class="inputbtn" id="inputbtn">£</div>
+              <input type="number" id="amount" min="0"/>
             </div>
+            <p class="error" id="amountError">This field is required</p>
           </div>
           <div class="col">
             <div class="inputbox">
               <label for="term">Mortgage Term</label>
               <div class="input-field">
-                <input type="text" id="term" />
+                <input type="number" id="term" min="0"/>
                 <div class="inputbtn">Years</div>
               </div>
+              <p class="error" id="termError">This field is required</p>
             </div>
             <div class="inputbox">
               <label for="rate">Interest Rate</label>
               <div class="input-field">
-                <input type="text" id="rate" />
+                <input type="number" id="rate" min="0" max="100"/>
                 <div class="inputbtn">%</div>
               </div>
+              <p class="error" id="rateError">This field is required</p>
             </div>
           </div>
           <div class="inputbox">
-            <label for="type">Mortgage Type</label>
+            <p class="label">Mortgage Type</p>
             <div class="options">
               <div class="radio-option">
                 <input
@@ -65,8 +68,10 @@
                 />
                 <label for="interest">Interest Only</label>
               </div>
+              <p class="error" id="radioError">This field is required</p>
             </div>
           </div>
+
           <button type="button" id="calculate">
             <img
               src="assets/images/icon-calculator.svg"
@@ -93,11 +98,11 @@
             repayments” again.
           </p>
           <div id="results">
-            <label for="mothlyrepay">Your monthly repayments</label>
-            <div id="monthlyrepay">£1,797.74</div>
-            <hr>
-            <label for="termrepay">Total you'll repay over the term</label>
-            <div id="termrepay">£1,797.74</div>
+            <p for="monthlyrepay">Your monthly repayments</p>
+            <div id="monthlyrepay"></div>
+            <hr />
+            <p for="termrepay">Total you'll repay over the term</p>
+            <div id="termrepay"></div>
           </div>
         </div>
       </aside>
